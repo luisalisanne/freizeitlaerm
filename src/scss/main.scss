@@ -6,9 +6,9 @@ $theme-colors: (
   "warning": #30e2fe
 );
 
-.link-active {
+.current-page {
   @extend .active;
-  color: $primary;
+  color: #30e2fe;
 }
 
 //---------------------------------------------
@@ -43,10 +43,6 @@ $theme-colors: (
 
 body {
   font-family: "Press Start 2P", cursive;
-}
-
-main {
-  padding-top: 50px;
 }
 
 //---------------------------------------------
