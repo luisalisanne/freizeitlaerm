@@ -5,11 +5,6 @@ $theme-colors: (
   "warning": #30e2fe
 );
 
-.current-page {
-  @extend .active;
-  color: #30e2fe;
-}
-
 //---------------------------------------------
 //
 //  Table of Contents
@@ -19,11 +14,9 @@ $theme-colors: (
 //    3. Components
 //
 //---------------------------------------------
-
 //---------------------------------------------
 // 1. Basics
 //---------------------------------------------
-
 @import "../../node_modules/nes.css/css/nes.css";
 @import "variables";
 @import "bootstrap";
@@ -31,6 +24,12 @@ $theme-colors: (
 
 // FONT: Press Start 2P
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+// FONT: Quicksand (sans-serif)
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+// FONT: Source Code Pro
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 //---------------------------------------------
 // 2. Page Layout
@@ -41,17 +40,101 @@ $theme-colors: (
 }
 
 body {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Source Code Pro", sans-serif;
+  // background-image: url(../../dist/images/bg-img.png);
 }
 
+// MAIN STYLE
+
 .margin-main {
-  margin-top: 80px;
-  margin-bottom: 60px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+// PINK-BACKGROUND CONTAINER STYLE
+
+.bg-transp {
+  background-color: rgba(253, 90, 172, 0.685);
+  color: white;
+  font-weight: 500;
+  height: 70vh;
+  width: 60vw;
+  margin: 0 auto;
+
+  p {
+    padding: 10px;
+  }
+}
+
+// NAVBAR STYLE
+
+nav {
+  background-color: white;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #30e2fe;
+}
+
+.button::before {
+  content: "[ ";
+  font-size: 1.5em;
+  color: #fd5aab;
+}
+.button::after {
+  content: " ]";
+  font-size: 1.5em;
+  color: #fd5aab;
+}
+
+// CARDS EVENTS
+
+h2 {
+  font-family: "Press Start 2p", cursive;
+  font-size: small;
+  padding: 10px;
+}
+
+.box {
+  margin: 0 auto;
+  height: 200px;
+  width: 50vw;
+  overflow: hidden;
+  background-image: url(../../dist/images/test-1.jpg);
+  background-size: contain;
+}
+
+.hid-box {
+  top: 85%;
+  position: relative;
+  transition: all 0.3s ease-out;
+  background: rgba(253, 90, 172, 0.692);
+  height: 100%;
+  h2 {
+    color: white;
+  }
+  p {
+    padding: 10px;
+    color: black;
+    font-weight: 400;
+  }
+  button {
+    margin: 10px;
+  }
+}
+
+.box:hover > .hid-box {
+  top: 0;
 }
 
 // CARD FLIPS
 
-/* Flip Cards CSS */
+/* Flip Cards BOOKING */
 .card-container {
   perspective: 700px;
 }
@@ -76,6 +159,7 @@ body {
 }
 
 .card-flip .back {
+  font-family: "Quicksand", sans-serif;
   position: absolute;
   z-index: 0;
   transform: rotateY(-180deg);
@@ -84,6 +168,8 @@ body {
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
 }
+
+// FOOTER
 
 //---------------------------------------------
 // 3.Components
