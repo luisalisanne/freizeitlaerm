@@ -1,0 +1,35 @@
+// CARD FLIPS (BOOKING)
+
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.3s ease-out;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  //   height: 100%;
+  //   width: 100%;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}

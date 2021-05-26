@@ -1,0 +1,85 @@
+// EVENT-CARDS IN VERANSTALTUNGEN.HTML
+
+.box {
+  margin: 0 auto;
+  height: 33vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../../dist/images/test-1.jpg);
+  background-size: contain;
+}
+
+.hid-box {
+  top: 85%;
+  position: relative;
+  transition: all 0.3s ease-out;
+  background: rgba(253, 90, 172, 0.69);
+  height: 100%;
+  h2 {
+    color: white;
+    font-family: "Press Start 2p", cursive;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  p {
+    padding: 5px;
+    color: white;
+    font-size: 0.8rem;
+  }
+  button {
+    margin: 5px;
+    font-size: 0.8rem;
+  }
+}
+
+.box:hover > .hid-box {
+  top: 0;
+}
+
+@include media-breakpoint-up(sm) {
+  .box {
+    height: 33vh;
+    width: 80%;
+  }
+
+  .hid-box {
+    top: 85%;
+    position: relative;
+    transition: all 0.3s ease-out;
+    background: rgba(253, 90, 172, 0.692);
+    height: 100%;
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .box {
+    height: 45vh;
+    width: 50%;
+  }
+
+  .hid-box {
+    top: 85%;
+    position: relative;
+    transition: all 0.3s ease-out;
+    background: rgba(253, 90, 172, 0.829);
+    height: 100%;
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+  }
+}
