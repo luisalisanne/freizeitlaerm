@@ -3,8 +3,12 @@ $theme-colors: (
   "secondary": #8a8484,
   "primary": #fd5aab,
   "info": #f9db8c,
-  "warning": #30e2fe
+  "warning": #30e2fe,
+  "danger": #ffffff
 );
+
+$heading-color: #fd5aab;
+$bg-color: #f9db8c;
 
 //---------------------------------------------
 //
@@ -23,13 +27,15 @@ $theme-colors: (
 @import "bootstrap";
 @import "fonts";
 
-@import "events";
 @import "veranstaltungen";
+@import "event-page";
+@import "info-page";
 
 //---------------------------------------------
 // 2. Page Layout
 //---------------------------------------------
 
+// GENERAL STYLES
 :root {
   font-size: 62.5%;
 }
@@ -39,44 +45,18 @@ body {
   // background-image: url(../../dist/images/bg-img.png);
 }
 
-.test {
-  background: rgba(253, 90, 172, 0.69);
-  color: white;
-}
 // HEADER STYLE
-
-// MAIN STYLE
-
-.margin-main {
-  margin-top: 70px;
-  margin-bottom: 35px;
-}
-
-// PINK-BACKGROUND CONTAINER STYLE
-
-.bg-transp {
-  background-color: rgba(253, 90, 172, 0.685);
-  color: white;
-  width: 100%;
-  margin: 0 auto;
-
-  h2 {
-    font-family: "Press Start 2P";
-    font-size: 0.8rem;
-    padding: 5px;
-  }
-
-  p {
-    padding: 10px;
-    color: black;
-    font-size: 0.8rem;
-  }
-}
-
 // NAVBAR STYLE
 
 nav {
   background-color: white;
+  div {
+    position: relative;
+    .logo {
+      position: relative;
+      border: 2px solid lime;
+    }
+  }
 }
 
 .button {
@@ -96,6 +76,33 @@ nav {
   content: " ]";
   font-size: 1.5em;
   color: #fd5aab;
+}
+
+// MAIN STYLE
+
+.margin-main {
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+// H1 STYLE
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    display: none;
+  }
+}
+
+h2 {
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  padding: 5px;
 }
 
 //---------------------------------------------

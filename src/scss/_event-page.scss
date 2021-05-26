@@ -1,0 +1,72 @@
+// EVENT BANNER
+
+.event-banner {
+  height: 150px;
+  background-color: $bg-color;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+
+  .event-title {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: $heading-color;
+    color: white;
+  }
+}
+
+.booking {
+  margin: 0 auto;
+}
+
+@include media-breakpoint-up(md) {
+  .event-banner,
+  .booking {
+    width: 70%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .event-banner,
+  .booking {
+    width: 60%;
+  }
+}
+
+// CARD FLIPS (BOOKING)
+
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.3s ease-out;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  position: absolute;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}

@@ -2,7 +2,7 @@
 
 .box {
   margin: 0 auto;
-  height: 33vh;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   background-image: url(../../dist/images/test-1.jpg);
@@ -25,6 +25,7 @@
     padding: 5px;
     color: white;
     font-size: 0.8rem;
+    text-shadow: 3px 3px 5px black;
   }
   button {
     margin: 5px;

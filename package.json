@@ -39,6 +39,7 @@
     "webpack-cli": "^4.4.0"
   },
   "dependencies": {
+    "live-server": "^1.2.1",
     "nes.css": "^2.3.0"
   }
 }
