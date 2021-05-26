@@ -45,11 +45,13 @@ body {
   // background-image: url(../../dist/images/bg-img.png);
 }
 
+// HEADER STYLE
+
 // MAIN STYLE
 
 .margin-main {
   margin-top: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 // PINK-BACKGROUND CONTAINER STYLE
@@ -79,7 +81,6 @@ nav {
 
 .button:hover {
   text-decoration: none;
-  color: #30e2fe;
 }
 
 .button::before {
@@ -93,18 +94,12 @@ nav {
   color: #fd5aab;
 }
 
-// CARDS EVENTS
-
-h2 {
-  font-family: "Press Start 2p", cursive;
-  font-size: small;
-  padding: 10px;
-}
+// CARDS EVENTS IN "VERANSTALTUNGEN"
 
 .box {
   margin: 0 auto;
-  height: 200px;
-  width: 50vw;
+  height: 33vh;
+  width: 100%;
   overflow: hidden;
   background-image: url(../../dist/images/test-1.jpg);
   background-size: contain;
@@ -118,14 +113,18 @@ h2 {
   height: 100%;
   h2 {
     color: white;
+    font-family: "Press Start 2p", cursive;
+    font-size: 0.8rem;
+    padding: 5px;
   }
   p {
-    padding: 10px;
-    color: black;
-    font-weight: 400;
+    padding: 5px;
+    color: white;
+    font-size: 0.8rem;
   }
   button {
-    margin: 10px;
+    margin: 5px;
+    font-size: 0.8rem;
   }
 }
 
@@ -133,9 +132,56 @@ h2 {
   top: 0;
 }
 
-// CARD FLIPS
+@include media-breakpoint-up(sm) {
+  .box {
+    height: 33vh;
+    width: 80%;
+  }
 
-/* Flip Cards BOOKING */
+  .hid-box {
+    top: 85%;
+    position: relative;
+    transition: all 0.3s ease-out;
+    background: rgba(253, 90, 172, 0.692);
+    height: 100%;
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .box {
+    height: 45vh;
+    width: 50%;
+  }
+
+  .hid-box {
+    top: 85%;
+    position: relative;
+    transition: all 0.3s ease-out;
+    background: rgba(253, 90, 172, 0.829);
+    height: 100%;
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// CARD FLIPS (BOOKING)
+
 .card-container {
   perspective: 700px;
 }
