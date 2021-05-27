@@ -1,3 +1,26 @@
+.container {
+  div {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      &:hover {
+        opacity: 0.1;
+        transition: 0.3s;
+      }
+    }
+
+    .artist {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      color: black;
+      padding: 3px;
+    }
+  }
+}
+
 // EVENT BANNER
 
 .event-banner {
@@ -38,35 +61,35 @@
 
 // CARD FLIPS (BOOKING)
 
-.card-container {
-  perspective: 700px;
-}
-.card-flip {
-  position: relative;
-  transform-style: preserve-3d;
-  height: auto;
-  transition: all 0.3s ease-out;
-  border: none;
-}
+// .card-container {
+//   perspective: 700px;
+// }
+// .card-flip {
+//   position: relative;
+//   transform-style: preserve-3d;
+//   height: auto;
+//   transition: all 0.3s ease-out;
+//   border: none;
+// }
 
-.card-flip div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-}
+// .card-flip div {
+//   backface-visibility: hidden;
+//   transform-style: preserve-3d;
+//   height: 100%;
+//   width: 100%;
+// }
 
-.card-flip .front {
-  position: relative;
-  z-index: 1;
-}
+// .card-flip .front {
+//   position: relative;
+//   z-index: 1;
+// }
 
-.card-flip .back {
-  position: absolute;
-  z-index: 0;
-  transform: rotateY(-180deg);
-}
+// .card-flip .back {
+//   position: absolute;
+//   z-index: 0;
+//   transform: rotateY(-180deg);
+// }
 
-.card-container:hover .card-flip {
-  transform: rotateY(180deg);
-}
+// .card-container:hover .card-flip {
+//   transform: rotateY(180deg);
+// }

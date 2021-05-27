@@ -42,25 +42,33 @@ $bg-color: #f9db8c;
 
 body {
   font-family: "Source Code Pro", sans-serif;
-  // background-image: url(../../dist/images/bg-img.png);
+  background-color: rgb(250, 246, 246);
 }
 
+.background {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: #f9db8c;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
 // HEADER STYLE
 // NAVBAR STYLE
 
 nav {
   background-color: white;
-  div {
-    position: relative;
-    .logo {
-      position: relative;
-      border: 2px solid lime;
-    }
-  }
 }
 
 .button {
   text-decoration: none;
+  font-weight: 600;
 }
 
 .button:hover {

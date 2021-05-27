@@ -13,23 +13,29 @@
   top: 85%;
   position: relative;
   transition: all 0.3s ease-out;
-  background: rgba(253, 90, 172, 0.69);
+  background: rgba(253, 90, 172, 0.767);
   height: 100%;
   h2 {
     color: white;
     font-family: "Press Start 2p", cursive;
-    font-size: 0.8rem;
-    padding: 5px;
+    font-size: 0.7rem;
+    padding: 10px 10px 5px 5px;
   }
   p {
-    padding: 5px;
     color: white;
     font-size: 0.8rem;
-    text-shadow: 3px 3px 5px black;
+    padding: 5px;
   }
   button {
     margin: 5px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    text-decoration: none;
+    background-color: white;
+
+    a {
+      text-decoration: none;
+      color: $heading-color;
+    }
   }
 }
 
@@ -74,13 +80,13 @@
     background: rgba(253, 90, 172, 0.829);
     height: 100%;
     h2 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     button {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }
