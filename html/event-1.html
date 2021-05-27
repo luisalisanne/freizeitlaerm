@@ -30,15 +30,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <!-- <li>
-                <a class="navbar-brand" href="./index.html">
-                  <img src="../dist/images/1flamingo.jpg" alt="" width="40px" />
-                </a>
-              </li> -->
               <li class="nav-item">
-                <a class="nav-link m-md-3 button text-warning" aria-current="page" href="./veranstaltungen.html"
-                  >Wann gibt's Lärm?</a
-                >
+                <a class="nav-link m-md-3 button" href="./veranstaltungen.html">Wann gibt's Lärm?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link m-md-3 button" href="./überuns.html">Wir machen Lärm!</a>
@@ -58,95 +51,58 @@
     <!-- END HEADER INCL. NAVBAR -->
 
     <!-- MAIN  -->
-    <main class="container-sm bg-light margin-main">
-      <h2 class="text-primary text-center">Wer macht Lärm?</h2>
-
-
-      <!-- FLIPPING CARDS -->
-      <section class="booking">
-        <!-- ROW -->
-        <div class="row justify-content-center">
-          <!-- COLUMN 1 -->
-          <div class="col-xs-12 col-sm-5 card-container m-1">
-            <div class="card card-flip">
-              <div class="front">
-                <img src="../dist/images/leon.jpg" width="100%" alt="" />
-              </div>
-              <div class="back">
-                <h2 class="text-end text-primary">Artist's Name</h2>
-                <p class="p-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur. Nam dignissimos magni
-                  tenetur ipsam velit accusamus. Aliquam, numquam mollitia?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- COLUMN 2 -->
-
-          <div class="col-xs-12 col-sm-5 card-container m-1">
-            <div class="card card-flip">
-              <div class="front">
-                <img src="../dist/images/leon.jpg"  width="100%" alt="" />
-              </div>
-              <div class="back">
-                <h2 class="text-end text-primary">Artist's Name</h2>
-                <p class="p-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur. Nam dignissimos magni
-                  tenetur ipsam velit accusamus. Aliquam, numquam mollitia?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- COLUMN 3 -->
-
-            <div class="col-xs-12 col-sm-5 card-container m-1">
-            <div class="card card-flip">
-              <div class="front">
-                <img src="../dist/images/leon.jpg" width="100%" alt="" />
-              </div>
-              <div class="back">
-                <h2 class="text-end text-primary">Artist's Name</h2>
-                <p class="p-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur. Nam dignissimos magni
-                  tenetur ipsam velit accusamus. 
-                </p>
-              </div>
-            </div>
-          </div>
-
-            <div class="col-xs-12 col-sm-5 card-container m-1">
-            <div class="card card-flip">
-              <div class="front">
-                <img src="../dist/images/leon.jpg" width="100%" alt="" />
-              </div>
-              <div class="back">
-                <h2 class="text-end text-primary">Artist's Name</h2>
-                <p class="p-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur. Nam dignissimos magni
-                  tenetur ipsam velit accusamus. 
-                </p>
-              </div>
-            </div>
-          </div>
-        <!-- END ROW -->
-      </section>
-      <!-- END CARDS -->
-
-      <!-- EVENT BANNER -->
-
+    <main class="container-sm margin-main content">
       <section>
-        <div class="event-banner">
-          <img src="../dist/images/test-1.jpg" width="100%" alt="...">
-          <div class="event-title">Event Title</div>
+        <div class="row info-box">
+          <h1 class="text-primary text-center">Wer macht Lärm?</h1>
+
+          <div class="col-sm-12 col-md-6 col-lg-6 align-self-center order-2">
+            <h1 class="text-center text-md-end text-primary">Wer macht Lärm?</h1>
+            <h2 class="text-end">Event Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae optio eum error a illo aperiam
+              sequi, quam necessitatibus dignissimos! Est, libero harum. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Dolor, porro eaque odit deleniti reprehenderit provident vitae distinctio at, doloribus
+              ducimus explicabo expedita aut cum quae voluptatum magnam sit culpa velit aliquam quia, voluptates
+              adipisci beatae. Consectetur voluptates rem inventore labore sed quidem, esse nisi quae totam vel
+              recusandae nobis.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim animi ut alias accusamus sed
+              placeat voluptates illum veritatis deserunt.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-info mb-3">
+                <a href="#">Ticket schnappen</a>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 pb-1 align-self-center order-1 order-sm-2">
+            <!-- FLIPPING CARDS -->
+            <div class="container">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <img src="../dist/images/leon.jpg" alt="" />
+                </div>
+                <div class="col-6 p-1"><img src="../dist/images/leon.jpg" alt="" /></div>
+
+                <!-- Force next columns to break to new line at md breakpoint and up -->
+                <!-- <div class="w-100 d-none d-md-block"></div> -->
+
+                <div class="col-6 p-1"><img src="../dist/images/leon.jpg" alt="" /></div>
+                <div class="col-6 p-1">
+                  <img src="../dist/images/leon.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- END CARDS -->
+          </div>
         </div>
       </section>
-
-      <section>
-        <button type="button" class="btn btn-outline-primary"><a href="#">Da will ich hin!</a></button>
-      </section>
     </main>
+
+    <div class="background"></div>
+
     <!-- END MAIN -->
 
     <!-- FOOTER -->
@@ -161,7 +117,6 @@
           <li class="nav-item">
             <a class="nav-link text-secondary" href="./datenschutz.html">Datenschutz</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link text-secondary" href="./impressum.html">Impressum</a>
           </li>

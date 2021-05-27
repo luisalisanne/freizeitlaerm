@@ -37,7 +37,7 @@
                 <a class="nav-link m-md-3 button" href="./überuns.html">Wir machen Lärm!</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-md-3 button text-warning" href="./mitgliedwerden.html">Mitlärmen?</a>
+                <a class="nav-link m-md-3 button" href="./mitgliedwerden.html">Mitlärmen?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link m-md-3 button" href="./kontakt.html">Lärmbeschwerde</a>
@@ -53,10 +53,10 @@
     <!-- MAIN  -->
     <main class="container-sm margin-main content">
       <section>
-        <h1 class="text-primary text-center h1-hidden">Mitlärmen?</h1>
         <div class="row info-box">
+          <h1 class="text-primary text-center">Wer macht Lärm?</h1>
           <div class="col-sm-12 col-md-6 col-lg-6 align-self-center order-2">
-            <h2 class="text-end">Bock auf Lärm machen?</h2>
+            <h2 class="text-end">Event Title</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae optio eum error a illo aperiam
               sequi, quam necessitatibus dignissimos! Est, libero harum. Lorem ipsum dolor sit amet consectetur
@@ -69,13 +69,31 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim animi ut alias accusamus sed
               placeat voluptates illum veritatis deserunt.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita magni voluptatibus omnis porro nisi?
-              Placeat ratione, quo odio error dicta unde eius quia officia repellat. Quisquam placeat sed quis. Nobis!
-            </p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-info">
+                <a href="#">Ticket schnappen</a>
+              </button>
+            </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 pb-1 align-self-center order-1 order-sm-2">
-            <img src="../dist/images/test-1.jpg" alt="" class="img-fluid d-block mx-auto mt-2" width="100%" />
+            <!-- FLIPPING CARDS -->
+            <div class="container">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <img src="../dist/images/leon.jpg" alt="" />
+                </div>
+                <div class="col-6 p-1"><img src="../dist/images/leon.jpg" alt="" /></div>
+
+                <!-- Force next columns to break to new line at md breakpoint and up -->
+                <!-- <div class="w-100 d-none d-md-block"></div> -->
+
+                <div class="col-6 p-1"><img src="../dist/images/leon.jpg" alt="" /></div>
+                <div class="col-6 p-1">
+                  <img src="../dist/images/leon.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- END CARDS -->
           </div>
         </div>
       </section>

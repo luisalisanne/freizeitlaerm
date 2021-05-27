@@ -45,11 +45,17 @@ body {
   background-color: rgb(250, 246, 246);
 }
 
+// BACKGROUND FOR INDEX-PAGE
+
+.white-background {
+  background-color: white;
+}
+
+// BACKGROUND FOR INFO-PAGES
 .background {
   position: fixed;
   top: 0px;
-  right: 0px;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: #f9db8c;
   z-index: -1;
@@ -58,6 +64,18 @@ body {
 .content {
   position: relative;
   z-index: 2;
+}
+
+@include media-breakpoint-up(md) {
+  .background {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #f9db8c;
+    z-index: -1;
+  }
 }
 // HEADER STYLE
 // NAVBAR STYLE
@@ -99,10 +117,16 @@ h1 {
   font-family: "Press Start 2P", cursive;
   font-size: 1.5rem;
   padding: 10px;
+  color: #30e2fe;
+}
+.h1-hidden {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  padding: 10px;
 }
 
 @include media-breakpoint-up(md) {
-  h1 {
+  .h1-hidden {
     display: none;
   }
 }
@@ -112,7 +136,6 @@ h2 {
   font-size: 0.8rem;
   padding: 5px;
 }
-
 //---------------------------------------------
 // 3.Components
 //---------------------------------------------
