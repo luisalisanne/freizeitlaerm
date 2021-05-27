@@ -64,7 +64,7 @@ body {
 
 .content {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 @include media-breakpoint-up(md) {
