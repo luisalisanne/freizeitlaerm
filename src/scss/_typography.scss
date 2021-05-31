@@ -23,3 +23,25 @@ a {
     font-size: 1.6rem;
   }
 }
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@include media-breakpoint-up(sm) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1 {
+    font-size: 2rem;
+  }
+}
