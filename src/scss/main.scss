@@ -52,6 +52,16 @@ body {
   background-color: white;
 }
 
+.logo {
+  width: 40px;
+}
+
+@include media-breakpoint-up(md) {
+  .logo {
+    width: 60px;
+  }
+}
+
 // BACKGROUND FOR INFO-PAGES
 // .background {
 //   position: fixed;
