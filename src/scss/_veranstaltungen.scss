@@ -40,6 +40,33 @@
   top: 0;
 }
 
+// BUTTON STYLE
+
+.event-button {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.event-button:hover {
+  text-decoration: none;
+  color: lightpink;
+}
+
+.event-button::before {
+  content: "[ ";
+  font-size: 1.5em;
+  color: white;
+}
+.event-button::after {
+  content: " ]";
+  font-size: 1.5em;
+  color: white;
+}
+
+// BREAKPOINTS
+
 @include media-breakpoint-up(sm) {
   .box {
     height: 33vh;
