@@ -5,7 +5,7 @@
 // PINK-BACKGROUND CONTAINER STYLE
 
 .info-box {
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
   background-color: rgb(250, 227, 231);
   height: 100%;
@@ -53,6 +53,6 @@
 @include media-breakpoint-up(md) {
   .info-box {
     margin-top: 80px;
-    width: 70%;
+    width: 60%;
   }
 }

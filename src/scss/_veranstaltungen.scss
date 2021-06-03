@@ -3,7 +3,7 @@
 .box {
   margin: 0 auto;
   height: 200px;
-  width: 100%;
+  width: 95%;
   overflow: hidden;
   background-image: url(../../dist/images/test-1.jpg);
   background-size: cover;
@@ -15,7 +15,7 @@
   transition: all 0.3s ease-out;
   background: rgba(253, 90, 172, 0.767);
   height: 100%;
-  h2 {
+  h3 {
     color: white;
     font-family: "Press Start 2p", cursive;
     padding: 10px 10px 5px 5px;
@@ -46,12 +46,11 @@
   text-decoration: none;
   font-weight: 600;
   color: white;
-  text-transform: uppercase;
 }
 
 .event-button:hover {
   text-decoration: none;
-  color: lightpink;
+  color: yellow;
 }
 
 .event-button::before {
@@ -64,8 +63,6 @@
   font-size: 1.5em;
   color: white;
 }
-
-// BREAKPOINTS
 
 @include media-breakpoint-up(sm) {
   .box {
@@ -85,7 +82,6 @@
 @include media-breakpoint-up(md) {
   .box {
     height: 45vh;
-    width: 50%;
   }
 
   .hid-box {

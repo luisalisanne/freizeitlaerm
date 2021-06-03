@@ -6,7 +6,7 @@ h2 {
   div {
     position: relative;
     .artist-img {
-      width: 100%;
+      width: 95%;
       height: 100%;
       &:hover {
         opacity: 0;
@@ -16,10 +16,10 @@ h2 {
     .artist-text {
       position: absolute;
       top: 0;
-      z-index: -1;
       color: black;
       font-size: 0.7rem;
       opacity: 1;
+      z-index: -1;
     }
   }
 }
