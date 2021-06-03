@@ -13,14 +13,14 @@ a {
 @include media-breakpoint-up(md) {
   p,
   a {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
 }
 
 @include media-breakpoint-up(lg) {
   p,
   a {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
