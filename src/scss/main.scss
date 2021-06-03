@@ -79,6 +79,7 @@ body {
 //   }
 // }
 // HEADER STYLE
+
 // NAVBAR STYLE
 
 nav {
@@ -115,11 +116,11 @@ nav {
 // FOOTER STYLE
 footer {
   nav {
-    background-color: #f783bd;
+    background-color: white;
     ul {
       li {
         a {
-          color: white;
+          color: gray;
           text-decoration: none;
         }
       }
@@ -131,7 +132,7 @@ footer {
 
 h1 {
   padding: 10px;
-  color: #30e2fe;
+  font-family: "Press Start 2P", cursive;
 }
 
 .h1-hidden {

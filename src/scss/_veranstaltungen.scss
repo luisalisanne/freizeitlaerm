@@ -50,7 +50,7 @@
 
 .event-button:hover {
   text-decoration: none;
-  color: yellow;
+  color: black;
 }
 
 .event-button::before {
@@ -80,10 +80,6 @@
 }
 
 @include media-breakpoint-up(md) {
-  .box {
-    height: 45vh;
-  }
-
   .hid-box {
     top: 85%;
     position: relative;

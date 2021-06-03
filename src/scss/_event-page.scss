@@ -1,7 +1,3 @@
-h2 {
-  font-size: medium;
-}
-
 .container {
   div {
     position: relative;
@@ -17,8 +13,7 @@ h2 {
       position: absolute;
       top: 0;
       color: black;
-      font-size: 0.7rem;
-      opacity: 1;
+      font-size: 1rem;
       z-index: -1;
     }
   }

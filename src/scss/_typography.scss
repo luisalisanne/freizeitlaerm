@@ -1,47 +1,49 @@
 p,
-a {
+a,
+label {
   font-size: 1rem;
 }
 
+h1,
+h2 {
+  font-size: 2rem;
+}
+
 @include media-breakpoint-up(sm) {
   p,
-  a {
+  a,
+  label {
     font-size: 1.2rem;
   }
+
+  h1,
+  h2 {
+    font-size: 2.4rem;
+  }
 }
 
 @include media-breakpoint-up(md) {
   p,
-  a {
-    font-size: 1.7rem;
+  a,
+  label {
+    font-size: 1.4rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.8rem;
   }
 }
 
 @include media-breakpoint-up(lg) {
   p,
-  a {
-    font-size: 2rem;
+  a,
+  label {
+    font-size: 1.6rem;
   }
-}
 
-h1 {
-  font-size: 1.5rem;
-}
-
-@include media-breakpoint-up(sm) {
-  h1 {
-    font-size: 1.7rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  h1 {
-    font-size: 1.9rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  h1 {
-    font-size: 2rem;
+  h1,
+  h2 {
+    font-size: 3.2rem;
   }
 }

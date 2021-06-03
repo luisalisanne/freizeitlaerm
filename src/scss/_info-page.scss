@@ -8,12 +8,12 @@
   // width: 100%;
   margin: 0 auto;
   background-color: rgb(250, 227, 231);
-  height: 100%;
+  padding-top: 10px;
 
   h2 {
     margin: 15px;
     margin-bottom: 0px;
-    color: hotpink;
+    color: $heading-color;
   }
 
   .dashed-border {
@@ -21,8 +21,8 @@
     margin: 10px;
     margin-top: 0px;
     padding: 10px;
-    border-right: 1px dashed hotpink;
-    border-top: 1px dashed hotpink;
+    border-right: 1px dashed $heading-color;
+    border-top: 1px dashed $heading-color;
   }
 
   .dashed-border {
@@ -30,8 +30,15 @@
     margin: 10px;
     margin-top: 0px;
     padding: 10px;
-    border-right: 1px dashed hotpink;
-    border-top: 1px dashed hotpink;
+    border-right: 1px dashed $heading-color;
+    border-top: 1px dashed $heading-color;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .info-box {
+    margin-top: 80px;
+    width: 77%;
   }
 }
 
@@ -58,10 +65,3 @@
 //     object-fit: cover;
 //   }
 // }
-
-@include media-breakpoint-up(md) {
-  .info-box {
-    margin-top: 80px;
-    width: 60%;
-  }
-}
