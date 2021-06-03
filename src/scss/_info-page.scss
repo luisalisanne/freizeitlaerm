@@ -5,28 +5,50 @@
 // PINK-BACKGROUND CONTAINER STYLE
 
 .info-box {
-  border: 1px dashed $heading-color;
   width: 100%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.589);
-  z-index: 3;
+  background-color: rgb(250, 227, 231);
+  height: 100%;
 
   h2 {
-    padding: 20px 10px 0px 0px;
-    color: $heading-color;
+    margin: 15px;
+    margin-bottom: 0px;
+    color: hotpink;
   }
 
-  p {
+  .dashed-border {
+    height: 100%;
+    margin: 10px;
+    margin-top: 0px;
     padding: 10px;
-    color: black;
-  }
-
-  img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    border-right: 1px dashed hotpink;
+    border-top: 1px dashed hotpink;
   }
 }
+
+// .info-box {
+//   border: 1px dashed $heading-color;
+//   width: 100%;
+//   margin: 0 auto;
+//   background-color: rgba(255, 255, 255, 0.589);
+//   z-index: 3;
+
+//   h2 {
+//     padding: 20px 10px 0px 0px;
+//     color: $heading-color;
+//   }
+
+//   p {
+//     padding: 10px;
+//     color: black;
+//   }
+
+//   img {
+//     width: 200px;
+//     height: 200px;
+//     object-fit: cover;
+//   }
+// }
 
 @include media-breakpoint-up(md) {
   .info-box {
