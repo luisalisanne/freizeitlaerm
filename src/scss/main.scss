@@ -58,7 +58,9 @@ body {
 
 @include media-breakpoint-up(md) {
   .logo {
-    width: 60px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
   }
 }
 
